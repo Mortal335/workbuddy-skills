@@ -1,0 +1,4 @@
+# cmd.exe parses .bat files by byte blocks and chokes on LF-only line
+# endings, so batch files must be stored byte-exact and keep their CRLF.
+# See electron-acl-fix/SKILL.md ("提权脚本必须是 CRLF 换行").
+*.bat -text
